@@ -48,7 +48,7 @@ body {
 }
 
 .signature {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   color: #880e4f;
@@ -67,7 +67,7 @@ body {
   position: relative;
   padding: 40px 0;
   /* تصغير الكيكة بنسبة 25% */
-  transform: scale(0.75); /* كان 1 */ 
+  transform: scale(0.75) translateY(50px); /* كان 1 */ 
 }
 
 @media (min-width: 768px) {
@@ -139,7 +139,7 @@ body {
   position: absolute;
   top: -70px; /* أعلى قليلاً */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
   width: 380px; /* أوسع لتوزيع الزينة */
   height: 80px;
   display: flex;
@@ -169,7 +169,7 @@ body {
 /* الشموع الجديدة (5 شموع موزعة) */
 .candle {
   position: absolute;
-  top: -5px; /* رفع الشموع لأعلى الطبقة */
+  top: 5px; /* رفع الشموع لأعلى الطبقة */
   width: 12px;
   height: 60px; /* أقصر قليلاً لتبدو متناسبة */
   border-radius: 6px;
@@ -180,7 +180,7 @@ body {
   /* توزيع الشموع الخمسة */
   --candle-offset: calc(var(--i) - 3); /* 3 هو المنتصف (1,2,3,4,5) */
   left: calc(50% + var(--candle-offset) * 40px); /* تباعد 40px بين الشمعة والوسط */
-  transform: translateX(-50%);
+  transform: translateX(-80%);
   
   /* أطوال مختلفة للشموع لإضافة لمسة جمالية */
   height: calc(55px + var(--candle-offset) * -5px * var(--candle-offset)); 

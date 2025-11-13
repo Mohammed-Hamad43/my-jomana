@@ -1,208 +1,207 @@
 /* ===== إعدادات الصفحة العامة ===== */
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at center, #ffe6ea 0%, #ffc0cb 100%);
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-  color: #5d4037;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #ffe6ea 0%, #ffc0cb 100%);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  color: #5d4037;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 90vh;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* ===== النصوص ===== */
 .main-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3.5rem;
-  margin: 0;
-  color: #d81b60;
-  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
-  z-index: 10;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  color: #d81b60;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+  z-index: 10;
 }
 
 .message-area {
-  margin-top: 20px;
-  max-width: 600px;
+  margin-top: 20px;
+  max-width: 600px;
 }
 
 .love-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #4a4a4a;
-  font-weight: 500;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .signature {
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-family: 'Dancing Script', cursive;
-  color: #880e4f;
-  margin-top: 10px;
+  font-size: 2.5rem; /* تم تكبير التوقيع في التعديل السابق */
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  color: #880e4f;
+  margin-top: 10px;
 }
 
 .hint-text {
-  font-size: 0.8rem;
-  opacity: 0.8; /* جعلها أوضح قليلاً */
-  margin-top: auto;
-  color: #5d4037;
+  font-size: 0.8rem;
+  opacity: 0.8; 
+  margin-top: auto;
+  color: #5d4037;
 }
 
 /* ===== تنسيقات الكيكة الجديدة (أصغر وشموع أكثر) ===== */
 .cake-scene {
-  position: relative;
-  padding: 40px 0;
-  /* تصغير الكيكة بنسبة 25% */
-  transform: scale(0.75) translateY(50px); /* كان 1 */ 
+  position: relative;
+  padding: 40px 0;
+  transform: scale(0.75); 
 }
 
 @media (min-width: 768px) {
-  .cake-scene { transform: scale(0.75); } /* التأكد من أنها تبقى مصغرة */
+  .cake-scene { transform: scale(0.75); } 
 }
 
 .cake {
-  position: relative;
-  width: 420px; /* لم يتغير عرض الكعكة الأساسي، فقط التحويل الكلي */
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
+  position: relative;
+  width: 420px; 
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 /* الطبقات - ألوان الشوكولاتة */
 .layer-bottom, .layer-middle, .layer-top {
-  width: 380px;
-  margin: 0 auto;
-  border-radius: 15px;
-  position: relative;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  width: 380px;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .layer-bottom {
-  height: 120px;
-  background: #5d4037;
-  background-image:
-    radial-gradient(circle at 20% 20%, #ff80ab 2px, transparent 2px),
-    radial-gradient(circle at 80% 60%, #80d8ff 2px, transparent 2px),
-    radial-gradient(circle at 60% 30%, #ffd180 2px, transparent 2px);
-  background-size: 60px 60px;
-  border-bottom: 10px solid #3e2723;
+  height: 120px;
+  background: #5d4037;
+  background-image:
+    radial-gradient(circle at 20% 20%, #ff80ab 2px, transparent 2px),
+    radial-gradient(circle at 80% 60%, #80d8ff 2px, transparent 2px),
+    radial-gradient(circle at 60% 30%, #ffd180 2px, transparent 2px);
+  background-size: 60px 60px;
+  border-bottom: 10px solid #3e2723;
 }
 
 .layer-middle {
-  height: 80px;
-  background: #795548;
-  background-image:
-    radial-gradient(circle at 25% 40%, #ffff00 2px, transparent 2px),
-    radial-gradient(circle at 75% 20%, #ff4081 2px, transparent 2px);
-  background-size: 50px 50px;
-  border-bottom: 10px solid #5d4037;
+  height: 80px;
+  background: #795548;
+  background-image:
+    radial-gradient(circle at 25% 40%, #ffff00 2px, transparent 2px),
+    radial-gradient(circle at 75% 20%, #ff4081 2px, transparent 2px);
+  background-size: 50px 50px;
+  border-bottom: 10px solid #5d4037;
 }
 
 .layer-top {
-  height: 60px;
-  background: #8d6e63;
-  border-radius: 20px 20px 10px 10px;
-  box-shadow: 0 10px 0 #5d4037;
+  height: 60px;
+  background: #8d6e63;
+  border-radius: 20px 20px 10px 10px;
+  box-shadow: 0 10px 0 #5d4037;
 }
 
 /* صوص الشوكولاتة السائل (Drip) */
 .drip {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: linear-gradient(180deg, #3e2723 0%, #281815 100%);
-  border-radius: 10px 10px 0 0;
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 95% 70%, 85% 40%, 75% 75%, 65% 40%, 50% 80%, 40% 35%, 30% 70%, 20% 40%, 10% 75%, 0 40%);
-  z-index: 3;
+  position: absolute;
+  top: -10px; /* تم إنزاله 10 بكسل (-20 + 10 = -10) */
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, #3e2723 0%, #281815 100%);
+  border-radius: 10px 10px 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 95% 70%, 85% 40%, 75% 75%, 65% 40%, 50% 80%, 40% 35%, 30% 70%, 20% 40%, 10% 75%, 0 40%);
+  z-index: 3;
 }
 
 /* الزينة العلوية (تم تعديل المواقع والأحجام لتناسب 5 شموع) */
 .icing-top {
-  position: absolute;
-  top: -100px; /* أعلى قليلاً */
-  left: 50%;
-  transform: translateX(-40%);
-  width: 380px; /* أوسع لتوزيع الزينة */
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end; /* لضمان أن الزينة تكون في الأسفل قليلاً */
-  z-index: 4;
+  position: absolute;
+  top: -60px; /* تم إنزاله 10 بكسل (-70 + 10 = -60) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px; 
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; 
+  z-index: 4;
 }
 
 .swirl {
-  width: 40px; /* أصغر قليلاً */
-  height: 40px;
-  background: radial-gradient(circle at 30% 30%, #ffc1e3 0%, #f06292 80%);
-  border-radius: 50%;
-  box-shadow: 0 5px 0 #ad1457;
-  margin: 0 5px; /* تباعد بسيط بين الزينة */
+  width: 40px; 
+  height: 40px;
+  background: radial-gradient(circle at 30% 30%, #ffc1e3 0%, #f06292 80%);
+  border-radius: 50%;
+  box-shadow: 0 5px 0 #ad1457;
+  margin: 0 5px; 
 }
 
 .ball {
-  width: 30px; /* أصغر قليلاً */
-  height: 30px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
-  margin: 0 5px;
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+  margin: 0 5px;
 }
 
 /* الشموع الجديدة (5 شموع موزعة) */
 .candle {
-  position: absolute;
-  top: 5px; /* رفع الشموع لأعلى الطبقة */
-  width: 12px;
-  height: 60px; /* أقصر قليلاً لتبدو متناسبة */
-  border-radius: 6px;
-  background: repeating-linear-gradient(45deg, #fff, #fff 5px, #ff4081 5px, #ff4081 10px);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index: 5;
-  
-  /* توزيع الشموع الخمسة */
-  --candle-offset: calc(var(--i) - 3); /* 3 هو المنتصف (1,2,3,4,5) */
-  left: calc(50% + var(--candle-offset) * 40px); /* تباعد 40px بين الشمعة والوسط */
-  transform: translateX(-80%);
-  
-  /* أطوال مختلفة للشموع لإضافة لمسة جمالية */
-  height: calc(55px + var(--candle-offset) * -5px * var(--candle-offset)); 
-  top: calc(-30px - var(--candle-offset) * -5px * var(--candle-offset));
+  position: absolute;
+  /* تم حذف خاصية top: -15px المكررة */
+  width: 12px;
+  height: 60px; 
+  border-radius: 6px;
+  background: repeating-linear-gradient(45deg, #fff, #fff 5px, #ff4081 5px, #ff4081 10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 5;
+  
+  /* توزيع الشموع الخمسة */
+  --candle-offset: calc(var(--i) - 3); 
+  left: calc(50% + var(--candle-offset) * 40px); 
+  transform: translateX(-50%);
+  
+  /* أطوال مختلفة للشموع لإضافة لمسة جمالية */
+  height: calc(55px + var(--candle-offset) * -5px * var(--candle-offset)); 
+  top: calc(-50px - var(--candle-offset) * -5px * var(--candle-offset)); /* تم رفعه 40 بكسل (-10 - 40 = -50) */
 }
 
 /* الشعلة */
 .flame {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 14px;
-  height: 24px;
-  background: radial-gradient(circle at 50% 80%, #fff 0%, #ffeb3b 40%, #ff9800 80%, #ff5722 100%);
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  animation: flame 0.5s infinite alternate;
-  filter: drop-shadow(0 0 10px #ff9800);
-  transition: opacity 0.5s ease;
+  position: absolute;
+  top: -60px; /* تم رفعه 40 بكسل (-20 - 40 = -60) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 24px;
+  background: radial-gradient(circle at 50% 80%, #fff 0%, #ffeb3b 40%, #ff9800 80%, #ff5722 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flame 0.5s infinite alternate;
+  filter: drop-shadow(0 0 10px #ff9800);
+  transition: opacity 0.5s ease;
 }
 
 @keyframes flame {
-  0% { transform: translateX(-50%) scale(1); opacity: 1; }
-  100% { transform: translateX(-50%) scale(1.1) rotate(-2deg); opacity: 0.9; }
+  0% { transform: translateX(-50%) scale(1); opacity: 1; }
+  100% { transform: translateX(-50%) scale(1.1) rotate(-2deg); opacity: 0.9; }
 }

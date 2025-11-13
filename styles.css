@@ -145,7 +145,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  z-index: 4;
+  z-index: 6;
 }
 
 .swirl {
@@ -189,7 +189,7 @@ body {
 /* الشعلة (تم رفعها 40 بكسل) */
 .flame {
   position: absolute;
-  top: -60px; /* تم رفعه 40 بكسل */
+  top: -30px; /* تم رفعه 40 بكسل */
   left: 50%;
   transform: translateX(-50%);
   width: 14px;

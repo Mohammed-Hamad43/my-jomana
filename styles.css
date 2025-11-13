@@ -137,7 +137,7 @@ body {
 /* الزينة العلوية (تم تعديل المواقع والأحجام لتناسب 5 شموع) */
 .icing-top {
   position: absolute;
-  top: -70px; /* أعلى قليلاً */
+  top: -100px; /* أعلى قليلاً */
   left: 50%;
   transform: translateX(-40%);
   width: 380px; /* أوسع لتوزيع الزينة */
@@ -184,13 +184,13 @@ body {
   
   /* أطوال مختلفة للشموع لإضافة لمسة جمالية */
   height: calc(55px + var(--candle-offset) * -5px * var(--candle-offset)); 
-  top: calc(-10px - var(--candle-offset) * -5px * var(--candle-offset));
+  top: calc(-30px - var(--candle-offset) * -5px * var(--candle-offset));
 }
 
 /* الشعلة */
 .flame {
   position: absolute;
-  top: -10px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
   width: 14px;

@@ -169,7 +169,7 @@ body {
 /* الشموع الجديدة (5 شموع موزعة) */
 .candle {
   position: absolute;
-  top: -15px; /* رفع الشموع لأعلى الطبقة */
+  top: -5px; /* رفع الشموع لأعلى الطبقة */
   width: 12px;
   height: 60px; /* أقصر قليلاً لتبدو متناسبة */
   border-radius: 6px;
@@ -190,7 +190,7 @@ body {
 /* الشعلة */
 .flame {
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 14px;
